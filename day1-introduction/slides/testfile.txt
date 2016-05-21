@@ -1,0 +1,4 @@
+def scream():
+    print('aaaaaaaaah')
+
+x = 5
