@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guest Book</title>
+  </head>
+  <body>
+
+    {% if 'name' in session %}
+      <strong>Hello {{ session.name }}</strong>
+    {% else %}
+      <strong>Please sign my Guest Book!</strong>
+    {% endif %}
+
+    {% for flash in get_flashed_messages() %}
+      <p><strong>{{ flash }}</strong></p>
+    {% endfor %}
+
+    <form method="post">
+      <fieldset>
+        <legend>Sign the guest book</legend>
+        <div>
+          <label>Name:</label>
+          <input type="text" name="name" value="">
+        </div>
+        <div>
+          <label>Message:</label>
+          <textarea name="message"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </fieldset>
+    </form>
+
+		<br>
+		<hr>
+		<br>
+
+    {% if entries %}
+      {% for entry in entries %}
+        <p>{{ entry.name }} - {{ entry.message }} - {{ entry.created }}</p>
+        <br>
+      {% endfor %}
+    {% else %}
+      <p>No existing guest book entries</p>
+    {% endif %}
+
+  </body>
+</html>
