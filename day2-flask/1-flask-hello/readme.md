@@ -5,9 +5,13 @@ This means that when your project grows larger and more complex, then you have m
 
 However the disadvantage of this is that there is more decision making required on the part of the developer and on-boarding for new developers takes longer, as any two projects could have a very different set of extensions and structure.
 
-This is in contrast to a full web frame work like Django, which gives you a structure and all the features that you would need to make a full web application out of the box (which is what 'batteries included' means).
+This is in contrast to a full web framework like Django, which gives you a structure and all the features that you would need to make a full web application out of the box (which is what 'batteries included' means).
 
-Flask only includes what you would definitely want to have for any web page, Which is a templating system (Jinja2), session and cookie handling and a few defaults like a static file path, a development server and a few other features that almost every web app would use. Things that Flask doesn't include but Django does, is among other things an ORM (for databases), user management and a certain way of handling configuration.
+Flask only includes what you would definitely want to have for any web page, Which is a templating system (Jinja2), session and cookie handling and a few defaults like a static file path, a development server and a few other features that almost every web app would use. Things that Flask doesn't include but Django does, is among other things an ORM (for databases), user management and configuration files already set up in a specific way.
+
+## Installation
+You can install Flask by using pip, by simply typing ```pip install flask``` in your terminal to install it to your global site packages (your operating system's python packages) or ```pip3 install flask``` in order to make sure that you install it for your Python 3's site packages, as different versions of Python can have their own separate site packages.
+Alternatively, if you are using Pycharm, you can just use Pycharm to do this for you. Go to ```Settings -> Project: <Project Name> -> Project Interpreter``` and click on the green plus symbol to then find and install flask that way.
 
 ## Hello World
 ```python
