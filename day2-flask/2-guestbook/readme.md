@@ -459,6 +459,9 @@ And the accompanying template file ```home.html``` located in the ```templates``
 </html>
 ```
 
+## Resource
+A very useful resource is the online guide called **Explore Flask**, which can be found [here](https://exploreflask.com/en/latest/preface.html).
+
 ## Task
 Your task is to take your task 2 from day 1 of this Python tutorial, and make it a web based competitive game.
 You will be required to:
